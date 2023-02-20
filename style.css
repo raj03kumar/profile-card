@@ -1,0 +1,182 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background: url(img/bg-img.jpg);
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.overlay{
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: 0.5s ease-in;
+    transition-delay: 0.5s;
+    z-index: 1;
+}
+
+.profile-card{
+    width: 25em;
+    background:transparent;
+    box-shadow: 0 0 5em rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    position: relative;
+    padding-top: 16em;
+    overflow: hidden;
+    border-radius: 5%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d6d6d671;
+}
+
+.menu-btn{
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 2;
+}
+
+.profile-card img{
+    width: 15em;
+    border-radius: 60%;
+    position: absolute;
+    top: -2.2em;
+    right: -2.7em;
+    z-index: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.profile-card h1{
+    margin-bottom: 0.8em;
+}
+
+.profile-card h1:hover{
+    color: #d6d6d6;
+}
+
+.profile-card p{
+    margin: 0.2em 0;
+    color: #d6d6d6;
+}
+
+.profile-card .social{
+    margin-top: 3em;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1em;
+}
+
+.profile-card .social a{
+    font-size: 1.2em;
+    color: #000;
+}
+.profile-card .social a:hover{
+    font-size: 1.2em;
+    color: #d6d6d6;
+}
+
+.more{
+    padding: 0 1.5em 0 1.5em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 0;
+    z-index: 1;
+    color: #fff;
+    transition: 0.5s ease-in;
+    transition-delay: 0.5s;
+}
+
+.more h2{
+    margin: 1em 0;
+}
+
+.more p{
+    margin: 1.5em 0;
+    color: #d6d6d6;
+    line-height: 25px;
+}
+
+.more ul{
+    padding: 0.5em 2em;
+}
+
+.more li{
+    margin: 0.5em 0;
+    font-size: 1.2em;
+}
+
+.more .fab{
+    color: #d6d6d6a8;
+}
+
+.more .fab:hover{
+    color: #ffffff;
+}
+
+.fa-bars{
+    color: #d6d6d6;
+    padding: 0.5em;
+}
+
+/* Custom scrollbar */
+
+/* Width */
+.profile-card::-webkit-scrollbar{
+    width: 8px;
+}
+/* Track */
+.profile-card::-webkit-scrollbar-track{
+    background: #1e1e1e;
+}
+/* Handle */
+.profile-card::-webkit-scrollbar-thumb{
+    background: #ffffff;
+}
+/* Handle on hover */
+.profile-card::-webkit-scrollbar-thumb:hover{
+    background: #bcbcbc;
+}
+
+/* Dynamic classes for Javascript */
+.profile-card .img-expand{
+    width: 32em;
+    border-radius: 0;
+}
+
+.menu-btn-opened{
+    color: #fff;
+    /* background: #000; */
+    background: transparent;
+    padding: 0.5em;
+}
+
+.overlay-opened{
+    height: 100%;
+}
+
+.more-opened{
+    padding: 4em 1.5em 1.5em 1.5em;
+    height: 100%;
+    overflow-y: scroll;
+}

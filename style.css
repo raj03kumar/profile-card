@@ -64,10 +64,11 @@ body{
 
 .profile-card h1{
     margin-bottom: 0.8em;
+    color: #d6d6d6;
 }
 
 .profile-card h1:hover{
-    color: #d6d6d6;
+    color: #fff;
 }
 
 .profile-card p{
@@ -86,11 +87,11 @@ body{
 
 .profile-card .social a{
     font-size: 1.2em;
-    color: #000;
+    color: #d6d6d6;
 }
 .profile-card .social a:hover{
     font-size: 1.2em;
-    color: #d6d6d6;
+    color: #ffffff;
 }
 
 .more{

@@ -9,6 +9,12 @@ body{
     background-size: cover;
 }
 
+#particles-js{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -68,12 +74,16 @@ body{
 }
 
 .profile-card h1:hover{
-    color: #fff;
+    color: #ffffff;
 }
 
 .profile-card p{
     margin: 0.2em 0;
     color: #d6d6d6;
+}
+
+.profile-card p:hover{
+    color: #ffffff;
 }
 
 .profile-card .social{
@@ -138,6 +148,10 @@ body{
 .fa-bars{
     color: #d6d6d6;
     padding: 0.5em;
+}
+
+.fa-bars:hover{
+    color: #ffffff;
 }
 
 /* Custom scrollbar */

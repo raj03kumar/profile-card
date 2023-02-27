@@ -154,25 +154,6 @@ body{
     color: #ffffff;
 }
 
-/* Custom scrollbar */
-
-/* Width */
-.profile-card::-webkit-scrollbar{
-    width: 8px;
-}
-/* Track */
-.profile-card::-webkit-scrollbar-track{
-    background: #1e1e1e;
-}
-/* Handle */
-.profile-card::-webkit-scrollbar-thumb{
-    background: #ffffff;
-}
-/* Handle on hover */
-.profile-card::-webkit-scrollbar-thumb:hover{
-    background: #bcbcbc;
-}
-
 /* Dynamic classes for Javascript */
 .profile-card .img-expand{
     width: 32em;
@@ -194,4 +175,27 @@ body{
     padding: 4em 1.5em 1.5em 1.5em;
     height: 100%;
     overflow-y: scroll;
+}
+
+/* Custom Scrollbar*/
+
+/* width */
+::-webkit-scrollbar{
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track{
+    background: #ebcaf5;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb{
+    background: #420177;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover{
+    background: #7e3bb6;
 }
